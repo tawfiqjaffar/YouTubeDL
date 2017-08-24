@@ -23,7 +23,7 @@ $ sudo easy_install pip
 Run the following commands:
 
 ```sh
-$ cd && git clone https://github.com/tawfiqjaffar/YouTubeDL.git && cd YouTube
+$ cd && git clone https://github.com/tawfiqjaffar/YouTubeDL.git && cd YouTubeDL
 $ bash setup.sh
 ```
 

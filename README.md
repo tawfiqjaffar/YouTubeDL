@@ -11,7 +11,9 @@ A Unix based OS. (Linux, macOS...)
 * Git
 * [Python3]
 * [pip3]: Package manager powered by Python
-```sh sudo easy_install pip```
+```sh
+$ sudo easy_install pip
+```
 
 [Python3]: https://www.python.org/download/releases/3.0/
 [pip3]: https://pypi.python.org/pypi/pip

@@ -54,6 +54,7 @@ class Interface:
     def _getVideos(self):
         # print(getVideos(self.urlEntry.get()))
         self.console.insert(END, "Fetching YouTube video...\n")
+        print(self.urlEntry.get())
         vid = getVideos(self.urlEntry.get())
         self.updateCombo(vid[0])
         self.console.insert(END, "Got video!\n\tFile name: {}\n".format(vid[1]))
@@ -63,12 +64,9 @@ class Interface:
         self.videoCombo.current(0)
 
     def goDL(self):
-        ext = ''
         res = ''
         self.console.insert(END, "DOWNLOADING...\n\n")
-        if 'mp4' in self.videoCombo.get():
-            ext = 'mp4'
-        if '720p' in self.videoCombo.get():
-            res = '720p'
-        DL(self.fileNameEntry.get(), self.dest, ext, res)
+        res = self.videoCombo.get()
+        DL(res)
+        # DL(self.fileNameEntry.get(), self.dest, res)
         self.console.insert(END, "DOWNLOADED!\n")
